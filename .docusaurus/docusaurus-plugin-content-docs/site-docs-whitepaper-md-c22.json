@@ -1,0 +1,14 @@
+{
+  "id": "whitepaper",
+  "title": "Whitepaper",
+  "description": "TBD",
+  "source": "@site/docs/whitepaper.md",
+  "permalink": "/docs/whitepaper",
+  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/whitepaper.md",
+  "sidebar_label": "Whitepaper",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/overview"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "faq",
+  "title": "FAQ",
+  "description": "TBD",
+  "source": "@site/docs/faq.md",
+  "permalink": "/docs/faq",
+  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/faq.md",
+  "sidebar_label": "FAQ",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Documentation",
+    "permalink": "/docs/docs"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/overview"
+  }
+}

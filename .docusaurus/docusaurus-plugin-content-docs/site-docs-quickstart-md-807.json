@@ -1,0 +1,18 @@
+{
+  "id": "quickstart",
+  "title": "Getting started",
+  "description": "TBD",
+  "source": "@site/docs/quickstart.md",
+  "permalink": "/docs/quickstart",
+  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/quickstart.md",
+  "sidebar_label": "Getting started",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "System requirements",
+    "permalink": "/docs/requirements"
+  },
+  "next": {
+    "title": "Setup a node",
+    "permalink": "/docs/node"
+  }
+}
