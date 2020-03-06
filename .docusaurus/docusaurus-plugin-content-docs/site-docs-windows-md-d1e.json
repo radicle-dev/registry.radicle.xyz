@@ -1,0 +1,18 @@
+{
+  "id": "windows",
+  "title": "Windows",
+  "description": "TBD",
+  "source": "@site/docs/windows.md",
+  "permalink": "/docs/windows",
+  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/windows.md",
+  "sidebar_label": "Windows",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Linux",
+    "permalink": "/docs/linux"
+  },
+  "next": {
+    "title": "System requirements",
+    "permalink": "/docs/requirements"
+  }
+}

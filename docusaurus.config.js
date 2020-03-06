@@ -15,20 +15,38 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/intro', label: 'Docs', position: 'left'},
-        {href: 'https://radicle.community', label: 'Community', position: 'left'},
-        {href: 'https://radicle.xyz/towards-decentralized-code-collaboration.html', label: 'Blog', position: 'left'},
-        {to: 'docs/faq', label: 'FAQ', position: 'left'},
-        {
-          href: 'https://github.com/radicle-dev',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: 'docs/intro', label: 'Docs', position: 'right'},
+        {href: 'https://github.com/radicle-dev/radicle-registry', label: 'code', position: 'right'},
+        {to: 'docs/faq', label: 'FAQ', position: 'right'},
       ],
     },
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Get involved',
+          items: [
+            {
+              label: 'Radicle is free and open source software, we welcome all contributors. ',
+            },
+            {
+              label: 'Follow us on twitter.',
+              href: 'https://twitter.com/radicle_xyz',
+            },
+            {
+              label: 'Contribute to the development on github.',
+              href: 'https://github.com/radicle-dev',
+            },
+            {
+              label: 'Join the conversation on discourse.',
+              href: 'https://radicle.community/',
+            },
+            {
+              label: 'Drop in the #radicle channel on freenode.',
+              href: 'irc://freenode:1/radicle',
+            },
+          ],
+        },
         {
           title: 'Docs',
           items: [
@@ -46,38 +64,8 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/radicle',
-            },
-            {
-              label: 'Forum',
-              href: 'https://radicle.community/',
-            },
-          ],
-        },
-        {
-          title: 'Social',
-          items: [
-            {
-              label: 'Blog',
-              href: 'https://radicle.xyz/towards-decentralized-code-collaboration.html',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/radicle-dev',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/radicle_xyz',
-            },
-          ],
-        },
       ],
-      copyright: `Radicle, suprted by monadic.xyz with <3`,
+      copyright: `supported by monadic.xyz`,
     },
   },
   presets: [

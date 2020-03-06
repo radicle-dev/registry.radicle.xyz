@@ -22,6 +22,10 @@
   justify-content: center;
 }
 
+.buttons a:first-child {
+  margin-right: 16px;
+}
+
 .features {
   display: flex;
   align-items: center;
