@@ -3,9 +3,16 @@ id: intro
 title: Introduction
 sidebar_label: Introduction
 ---
-
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
-
+```
+                _(_)_     
+    @@@@       (_)@(_)    
+   @@()@@ wWWWw  (_)\     
+    @@@@  (___)     \|/   
+     /      Y       \|    
+  \ |     \ |/       | /  
+  \\|//   \\|///  \\\|//  
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.
