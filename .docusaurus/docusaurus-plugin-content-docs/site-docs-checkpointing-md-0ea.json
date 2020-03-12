@@ -1,0 +1,18 @@
+{
+  "id": "checkpointing",
+  "title": "Checkpointing",
+  "description": "TBD",
+  "source": "@site/docs/checkpointing.md",
+  "permalink": "/docs/checkpointing",
+  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/checkpointing.md",
+  "sidebar_label": "Checkpointing",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Projects",
+    "permalink": "/docs/projects"
+  },
+  "next": {
+    "title": "macOS",
+    "permalink": "/docs/mac"
+  }
+}

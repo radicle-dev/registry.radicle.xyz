@@ -1,0 +1,18 @@
+{
+  "id": "projects",
+  "title": "Projects",
+  "description": "TBD",
+  "source": "@site/docs/projects.md",
+  "permalink": "/docs/projects",
+  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/projects.md",
+  "sidebar_label": "Projects",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Organisations",
+    "permalink": "/docs/orgs"
+  },
+  "next": {
+    "title": "Checkpointing",
+    "permalink": "/docs/checkpointing"
+  }
+}
