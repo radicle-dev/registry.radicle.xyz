@@ -1,9 +1,0 @@
-{
-  "id": "guides",
-  "title": "Guides",
-  "description": "TBD",
-  "source": "@site/docs/guides.md",
-  "permalink": "/docs/guides",
-  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/guides.md",
-  "sidebar_label": "Guides"
-}

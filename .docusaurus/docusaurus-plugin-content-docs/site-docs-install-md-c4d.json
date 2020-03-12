@@ -1,9 +1,0 @@
-{
-  "id": "install",
-  "title": "Installation",
-  "description": "TBD",
-  "source": "@site/docs/install.md",
-  "permalink": "/docs/install",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/install.md",
-  "sidebar_label": "Install"
-}

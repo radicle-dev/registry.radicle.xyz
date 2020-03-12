@@ -1,9 +1,0 @@
-{
-  "id": "p2p",
-  "title": "P2P Network",
-  "description": "TBD",
-  "source": "@site/docs/p2p.md",
-  "permalink": "/docs/p2p",
-  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/p2p.md",
-  "sidebar_label": "P2P Network"
-}

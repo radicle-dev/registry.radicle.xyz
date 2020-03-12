@@ -1,9 +1,0 @@
-{
-  "id": "config",
-  "title": "Configuration",
-  "description": "TBD",
-  "source": "@site/docs/config.md",
-  "permalink": "/docs/config",
-  "editUrl": "https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/docs/config.md",
-  "sidebar_label": "Config"
-}
