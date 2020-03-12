@@ -77,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Radicle, suprted by monadic.xyz with <3`,
+      copyright: `Radicle, suprted by monadic.xyz with ♡`,
     },
   },
   presets: [

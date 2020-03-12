@@ -11,7 +11,8 @@ module.exports = {
     Registry: ['ids', 'orgs','projects','checkpointing'],
     Install: ['mac', 'linux', 'windows'],
     Guides: ['requirements','quickstart','node','mine'],
-    Documentation: ['docs','faq'],
+    Reference: ['docs','glossary','faq'],
     Protocol: ['overview','whitepaper'],
   },
+
 };
