@@ -37,12 +37,12 @@ module.exports = {
               to: 'docs/intro',
             },
             {
-              label: 'Design',
-              to: 'docs/design',
+              label: 'Why Radicle?',
+              to: 'docs/why',
             },
             {
-              label: 'RAD Token',
-              to: 'docs/token',
+              label: 'The Radicle Network',
+              to: 'docs/network',
             },
           ],
         },
@@ -54,7 +54,7 @@ module.exports = {
               href: 'https://stackoverflow.com/questions/tagged/radicle',
             },
             {
-              label: 'Forum',
+              label: 'Community forum',
               href: 'https://radicle.community/',
             },
           ],
@@ -77,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Radicle, suprted by monadic.xyz with ♡`,
+      copyright: `supported by monadic.xyz with ♡`,
     },
   },
   presets: [
