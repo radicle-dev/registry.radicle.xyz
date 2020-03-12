@@ -1,7 +1,7 @@
 ---
 id: node
-title: Setup a node
-sidebar_label: Setup node
+title: Setup full node
+sidebar_label: Setup full node
 ---
 
 TBD
