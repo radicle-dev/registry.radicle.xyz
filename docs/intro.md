@@ -3,6 +3,11 @@ id: intro
 title: Introduction
 sidebar_label: Introduction
 ---
+Radicle Registry is an account-based blockchain protocol that acts as a canonical global registry for code repositories. It provides users with the trusted, auditable and shared view of the network. It introduces a complementary and foremost secure layer to the [Radicle P2P](https://radicle.xyz/) network.
+
+The full node daemon, `TBD` is written in Rust and based on [substrate](https://substrate.dev/). By running a full node, you can participate in securing the network and serving canonical registry keys for Radicle.
+
+Radicle is an open platform owned by the commons. You can participate or follow the discussions in our [community forum](https://radicle.community/).
 ```
                 _(_)_     
     @@@@       (_)@(_)    
@@ -13,23 +18,15 @@ sidebar_label: Introduction
   \\|//   \\|///  \\\|//  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-## Markdown Syntax
+## Source code
+The latest source code is available on [Github](https://github.com/radicle-dev) under the [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license.
 
-To serve as an example page when styling markdown based Docusaurus sites.
+## IRC
+A community IRC channel exists on Freenode in irc.freenode.net:#radicle.
 
-## Headers
-
-# H1 - Create the best documentation
-
-## H2 - Create the best documentation
-
-### H3 - Create the best documentation
-
-#### H4 - Create the best documentation
-
-##### H5 - Create the best documentation
-
-###### H6 - Create the best documentation
+:::caution
+The Radicle Registry is alpha software. Please proceed with caution.
+:::
 
 ---
 
