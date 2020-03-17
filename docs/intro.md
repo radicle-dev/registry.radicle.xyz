@@ -7,8 +7,6 @@ Radicle Registry is an account-based blockchain protocol that acts as a canonica
 
 The full node daemon, `TBD` is written in Rust and based on [substrate](https://substrate.dev/). By running a full node, you can participate in securing the network and serving canonical registry keys for Radicle.
 
-Radicle is an open platform owned by the commons. You can participate or follow the discussions in our [community forum](https://radicle.community/).
-
 ```
 					____________________
 				   /                    \
@@ -34,7 +32,15 @@ Radicle is an open platform owned by the commons. You can participate or follow 
 ## Source code
 The latest source code is available on [Github](https://github.com/radicle-dev) under the [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license.
 
-## IRC
+## Community & IRC
+Radicle is an open platform owned by the commons. You can participate or follow the discussions in our [community forum](https://radicle.community/). and you can follow us on Twitter [@radicle_xyz](https://twitter.com/radicle_xyz).
+
 A community IRC channel exists on Freenode in irc.freenode.net:#radicle.
+
+## Tokens
+
+The integrity of our canonical registry is secured through an incentivized [proof-of-work (PoW)](https://en.wikipedia.org/wiki/Proof_of_work) based consensus scheme. The Registry uses a utility token to support its native functions such as project registration, checkpointing etc. (`TBD` better explanation).
+
+We strive to achieve network ownership by the [FOSS](https://en.wikipedia.org/wiki/Foss) community from [genesis](https://en.bitcoin.it/wiki/Genesis_block).
 
 ---
