@@ -4,4 +4,8 @@ title: System requirements
 sidebar_label: System requirements
 ---
 
-TBD
+* 64-bit Linux (easiest with a Debian-based distribution)
+
+* At least 4GB of RAM.
+
+* At least 8GB of RAM is recommended.
