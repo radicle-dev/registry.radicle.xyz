@@ -20,11 +20,11 @@ The registry enables all users to have a wallet that is linked to their code col
 
 We designed the registry as a permissionless blockchain using Nakamoto consensus and proof-of-work. We chose Nakamoto consensus for its operational simplicity, and proof-of-work for its best-in-class support for light clients.
 
-#### What does it look like for the user?
+### What does it look like for the user?
 
 The user is not directly exposed to the registry, but uses the registry's services through end-user applications. The user is able to register orgs and user handles, as well as manage funds held by the registry.
 
-#### What does the registry do for sustainability in FOSS?
+### What does the registry do for sustainability in FOSS?
 
 The registry enables native value transfer, ie. transfer of money and native assets between users. This allows developers to monetize their work or services offered on the network, with little to no friction.
 
