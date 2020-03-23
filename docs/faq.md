@@ -4,11 +4,13 @@ title: FAQ
 sidebar_label: FAQ
 ---
 
-### What does Radicle Registry do?
+### What is the "registry"?
+
+### What problem does the registry solve?
 
 ### Why is canonical name registry for open source projects important?
 
-### How does Radicle work?
+### How does the registry work?
 
 ### Doesn't PoW promote carbon emissions?
 
