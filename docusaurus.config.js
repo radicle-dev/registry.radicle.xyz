@@ -87,7 +87,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/radicle-dev/radicle-dev-hub/edit/master/website/',
+            'https://github.com/radicle-dev/radicle-run/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
