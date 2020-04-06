@@ -22,7 +22,7 @@ This guide requires you to install the following binaries:
 * `radicle-registry-cli`
 
 You can get the binaries for the `x86_64-unknown-linux-gnu` target
-[here](`TODO link`). For other targets you will need to build the binaries [from
+[here](`TODO link`). For other targets, you will need to build the binaries [from
 source](`TODO link`).
 
 
@@ -69,7 +69,7 @@ successfully mined blocks. To collect your rewards, you need an account.
 Generate an account for mining:
 
 ```bash
-radicle-registry-cli account generate minining
+radicle-registry account generate mining
 ```
 
 This will print the SS58 address for your mining account.
@@ -85,7 +85,7 @@ If you see a block being mined (TODO how?) you will have received some block
 rewards. Check your balance with
 
 ```bash
-radicle-registry-cli account balance <address>
+radicle-registry account balance <address>
 ```
 
 At the moment, only single-threaded mining is supported. Follow [this
