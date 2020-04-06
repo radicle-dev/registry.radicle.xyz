@@ -19,6 +19,10 @@ You can get the binaries for the `x86_64-unknown-linux-gnu` target
 [here](`TODO link`). For other targets, you will need to build the binaries [from
 source](`TODO link`).
 
+#### System requirements
+
+* 64-bit Linux (easiest with a Debian-based distribution)
+* At least 4GB of RAM (>8GB recommended)
 
 ## Running a node
 
