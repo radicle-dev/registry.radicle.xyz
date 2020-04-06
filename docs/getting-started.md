@@ -158,3 +158,17 @@ Run some of the commands to have a view over the current state of our ledger.
     ``` bash
     radicle-registry-cli account balance <address>
     ```
+
+4. Submit your first transaction
+
+    Now you have everything you need to submit your first transaction.
+    For instance, you can register yourself as a user in our ledger by running:
+
+    ``` bash
+    radicle-registry-cli user register <handle> --author <account_name>
+    ```
+
+    ⚠ Running this command will submit the transaction with a default fee value.
+    You can specify a custom fee with `--fee <amount>` to gain priority.
+
+    Find other transactions you can submit and learn more details at [Make a transaction](make-a-transaction).
