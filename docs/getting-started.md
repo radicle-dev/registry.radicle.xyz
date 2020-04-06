@@ -7,12 +7,6 @@ sidebar_label: Getting started
 This guide explains how you can participate in the `Radicle Friends & Family Net
 (FFnet)` blockchain network.
 
-#### Table of Contents
-
-0. [Installation](#installation)
-1. [Running a node](#running-a-node)
-2. [Mining blocks](#mining-blocks)
-3. [Interacting with the ledger](#interacting-with-the-ledger)
 
 ## Installation
 
