@@ -20,22 +20,19 @@ The full node daemon, `TBD` is written in Rust and based on [substrate](https://
 					     	!  !
 						    !  !
 						    !  !
-                _(_)_       !  !                   _(_)_ 
-    @@@@       (_)@(_)     (____)      @@@@       (_)@(_) 
-   @@()@@ wWWWw  (_)\      (____)     @@()@@ wWWWw  (_)\ 
+                _(_)_       !  !                   _(_)_
+    @@@@       (_)@(_)     (____)      @@@@       (_)@(_)
+   @@()@@ wWWWw  (_)\      (____)     @@()@@ wWWWw  (_)\
     @@@@  (___)     \|/    (____)      @@@@  (___)     \|/
-     /      Y       \|     (____)       /      Y       \| 
-  \ |     \ |/       | /    !  !     \ |     \ |/       | / 
-  \\|//   \\|///  \\\|//    !  !     \\|//   \\|///  \\\|// 
-^^^^^^^^^^^^^^^^^^^^^^^^^   \__/   ^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+     /      Y       \|     (____)       /      Y       \|
+  \ |     \ |/       | /    !  !     \ |     \ |/       | /
+  \\|//   \\|///  \\\|//    !  !     \\|//   \\|///  \\\|//
+^^^^^^^^^^^^^^^^^^^^^^^^^   \__/   ^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
+
 ## Source code
 The latest source code is available on [Github](https://github.com/radicle-dev) under the [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license.
 
-## Community & IRC
-Radicle is an open platform owned by the commons. You can participate or follow the discussions in our [community forum](https://radicle.community/). and you can follow us on Twitter [@radicle_xyz](https://twitter.com/radicle_xyz).
-
-A community IRC channel exists on Freenode in irc.freenode.net:#radicle.
 
 ## Tokens
 
@@ -43,4 +40,11 @@ The integrity of our canonical registry is secured through an incentivized [proo
 
 We strive to achieve network ownership by the [FOSS](https://en.wikipedia.org/wiki/Foss) community from [genesis](https://en.bitcoin.it/wiki/Genesis_block).
 
----
+## Get in touch
+
+We would love to hear from you!
+There are several ways to get in touch with us:
+
+- Participate or follow the discussions in our <a href="https://radicle.community/" target="_blank">Community forum</a>
+- Follow us on Twitter <a href="https://twitter.com/radicle_xyz" target="_blank">@radicle_xyz</a>
+- Join our <a href="https://webchat.freenode.net/#radicle" target="_blank">Comunity IRC channel</a>
