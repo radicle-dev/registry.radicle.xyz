@@ -4,21 +4,33 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-This guide explains how you can participate in the Radicle Friends & Family Net
-(FFnet) by running a node, interacting with our ledger, and mining blocks.
+This guide explains how you can participate in the `Radicle Friends & Family Net
+(FFnet)` blockchain network.
+
+#### Table of Contents
+
+0. [Installation](#installation)
+1. [Running a node](#running-a-node)
+2. [Mining blocks](#mining-blocks)
+3. [Interacting with the ledger](#interacting-with-the-ledger)
 
 ## Installation
 
-For this guide you need the `radicle-registry-node` and the `radicle-registry-cli` binaries.
+This guide requires you to install the following binaries:
+
+* `radicle-registry-node`
+* `radicle-registry-cli`
 
 You can get the binaries for the `x86_64-unknown-linux-gnu` target
-[here](TODO link). For other targets you will need to build the binaries [from
-source](TODO link).
+[here](`TODO link`). For other targets you will need to build the binaries [from
+source](`TODO link`).
 
 
 ## Running a node
 
-TODO explain what a node does?
+Nodes hold a copy of the entire ledger and have the vital role of being a source of
+validity of the history of the chain. They validate transactions all the way to the
+genesis block.
 
 To start a node, run:
 
@@ -33,70 +45,23 @@ start syncing the chain. You’ll see a log line similar to this one:
 12:39:12.713 INFO  substrate  Idle (3 peers), best: #936 (0x2fbe…6374) ...
 ```
 
-This tells you that your node is connected to three other nodes and that the
-best block it has imported so far has height 936 and hash `0x2fbe…6374`.
+ⓘ This log informs you that the node is connected to three other nodes
+and that the best block it has imported so far has height 936 and hash `0x2fbe…6374`.
 
-You node is fully synced with the network if the height of the best block does
+Your node is fully synced with the network if the height of the best block does
 not change rapidly anymore.
 
-Now that your node is fully synced you can use it to list all organizations that
+Now that your node is fully synced, you can use it to list all organizations that
 are registered in the Radicle network.
 
 ```bash
-radicle-registry --node-host localhost orgs list
+radicle-registry-cli orgs list --node-host localhost
 ```
 
-## Interacting with the ledger
-
-Pre-requisits
-
-1. Generate an account
-2. Request RADs
-3. Check balance
-
-Plaground
-4. Make a transaction
-
-To interact with the ledger, you first need to get some RAD into your account.
-
-An account is a random key pair generated locally that is locally uniquely identified
-by a name you specify.
-
-```bash
-radicle-registry account generate <account_name>
-```
-
-This command will give you the SS58 address for your new account.
-You can see the addresses of all your accounts by running:
-
-``` bash
-radicle-registry account list
-```
+Find other queries you can run at [Querying the ledger](#querying-the-ledger).
 
 
-You can ask for some RAD [irc://irc.freenode.net/#radicle](https://webchat.freenode.net/#radicle)
-
-You can also mine to get some RAD. See below.
-
-After you’ve received some funds you can check your balance with:
-
-```bash
-radicle-registry account balance <account_address>
-```
-
-You can now register a user:
-
-```bash
-radicle-registry user register <handle>
-```
-
-List all the registered users:
-
-```bash
-radicle-registry user list
-```
-
-## Mining
+## Mining Blocks
 
 You can support the network by mining blocks. Miners receive rewards from
 successfully mined blocks. To collect your rewards, you need an account.
@@ -104,7 +69,7 @@ successfully mined blocks. To collect your rewards, you need an account.
 Generate an account for mining:
 
 ```bash
-radicle-registry account generate minining
+radicle-registry-cli account generate minining
 ```
 
 This will print the SS58 address for your mining account.
@@ -114,14 +79,84 @@ You can now run a mining node:
 radicle-registry-node --miner <address>
 ```
 
-TODO: You can see mining in the logs
+`TODO: You can see mining in the logs`
 
 If you see a block being mined (TODO how?) you will have received some block
 rewards. Check your balance with
 
 ```bash
-radicle-registry account balance <address>
+radicle-registry-cli account balance <address>
 ```
 
-At the moment only single threaded mining is supported. Follow [this
+At the moment, only single-threaded mining is supported. Follow [this
 issue](https://github.com/radicle-dev/radicle-registry/issues/298) for updates.
+
+
+## Interacting with the ledger
+
+Let's go through how you can query the ledger and submit transactions.
+
+### Querying the ledger
+
+Run some of the commands to have a view over the current state of our ledger.
+
+- List all the registered orgs:
+    ```bash
+    radicle-registry-cli org list
+    ```
+
+- List all the registered projects:
+    ```bash
+    radicle-registry-cli project list
+    ```
+
+- List all the registered users:
+    ```bash
+    radicle-registry-cli users list
+    ```
+
+`TODO(nuno): Add link or tip on how to find more query commands`
+
+### Submitting a transaction
+
+
+1. Generate an account
+
+    You need an account to author transactions.
+    An account is a randomly generated key pair identified by a name of your choice.
+    To generate an account, run:
+
+    ```bash
+    radicle-registry-cli account generate <account_name>
+    ```
+
+    This command will give you the SS58 address for your new account.
+    E.g. generating an account named 'neo':
+
+    ```bash
+    radicle-registry-cli account generate neo
+    ✓ Account generated successfully
+    ℹ SS58 address: 5HWP48i9TuP2VrRZrNeb6QzYpdUSE9BvyaptEqqHrLfH8ZPd
+    ```
+
+    You can always obtain the addresses of all your accounts by running:
+
+    ``` bash
+    radicle-registry-cli account list
+    ```
+
+2. Request RADs
+
+    To interact with the ledger, you first need to get some RAD into your account to have enough
+    funds to pay for transactions fees.
+
+    Get in touch with us at <a href="https://webchat.freenode.net/#radicle" target="_blank">irc://irc.freenode.net/#radicle</a>
+    to request some RAD for your account. Please, bring your SS58 account address along.
+
+3. Check your balance
+
+    Verify that you have received funds by running:
+
+    ``` bash
+    radicle-registry-cli account balance <address>
+    ```
