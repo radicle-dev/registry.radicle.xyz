@@ -113,7 +113,7 @@ Run some of the commands to have a view over the current state of our ledger.
     radicle-registry-cli users list
     ```
 
-`TODO(nuno): Add link or tip on how to find more query commands`
+Explore our CLI to find more queries you can run.
 
 ### Submitting a transaction
 
@@ -171,4 +171,4 @@ Run some of the commands to have a view over the current state of our ledger.
     ⚠ Running this command will submit the transaction with a default fee value.
     You can specify a custom fee with `--fee <amount>` to gain priority.
 
-    Find other transactions you can submit and learn more details at [Make a transaction](make-a-transaction).
+    Find other transactions you can submit and learn more details at [Submit Transactions](submit-transactions).
