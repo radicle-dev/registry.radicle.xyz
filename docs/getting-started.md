@@ -67,7 +67,7 @@ successfully mined blocks. To collect your rewards, you need an account.
 Generate an account for mining:
 
 ```bash
-radicle-registry account generate mining
+radicle-registry-cli account generate mining
 ```
 
 This will print the SS58 address for your mining account.
@@ -83,7 +83,7 @@ If you see a block being mined (TODO how?) you will have received some block
 rewards. Check your balance with
 
 ```bash
-radicle-registry account balance <address>
+radicle-registry-cli account balance <address>
 ```
 
 At the moment, only single-threaded mining is supported. Follow [this
