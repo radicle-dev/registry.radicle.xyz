@@ -78,9 +78,14 @@ You can now run a mining node:
 radicle-registry-node --miner <address>
 ```
 
-`TODO: You can see mining in the logs`
+If your node successfully mined a block and imported it will log “Imported own
+block”:
+```
+15:50:13.041 INFO radicle_registry_node::service  Imported own block #1322 (0xefd1…4445)
+```
+Depending on how lucky you are mining a block might take minutes or hours.
 
-If you see a block being mined (TODO how?) you will have received some block
+When your node has mined a block, your mining account receives some block
 rewards. Check your balance with
 
 ```bash
