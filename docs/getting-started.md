@@ -15,9 +15,10 @@ This guide requires you to install the following binaries:
 * `radicle-registry-node`
 * `radicle-registry-cli`
 
-You can get the binaries for the `x86_64-unknown-linux-gnu` target
-[here](`TODO link`). For other targets, you will need to build the binaries [from
-source](`TODO link`).
+Download the latest versions for the `x86_64-unknown-linux-gnu` target [here](https://github.com/radicle-dev/radicle-registry/releases/latest).
+
+For other targets, you will need to build the binaries [from source](`TODO link`).
+
 
 #### System requirements
 
