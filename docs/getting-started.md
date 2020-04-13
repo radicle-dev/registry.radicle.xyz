@@ -56,39 +56,8 @@ Find other queries you can run at [Querying the ledger](#querying-the-ledger).
 
 ## Mining Blocks
 
-You can support the network by mining blocks. Miners receive rewards from
-successfully mined blocks. To collect your rewards, you need an account.
-
-Generate an account for mining:
-
-```bash
-radicle-registry-cli account generate mining
-```
-
-This will print the SS58 address for your mining account.
-You can now run a mining node:
-
-```bash
-radicle-registry-node --mine <address>
-```
-
-If your node successfully mined a block and imported it will log “Imported own
-block”:
-```
-15:50:13.041 INFO radicle_registry_node::service  Imported own block #1322 (0xefd1…4445)
-```
-Depending on how lucky you are mining a block might take minutes or hours.
-
-When your node has mined a block, your mining account receives some block
-rewards. Check your balance with
-
-```bash
-radicle-registry-cli account balance <address>
-```
-
-At the moment, only single-threaded mining is supported. Follow [this
-issue](https://github.com/radicle-dev/radicle-registry/issues/298) for updates.
-
+You can support the network and receive rewards by mining blocks.
+You can find out how to do that on the [full node setup page](node#Mining_Blocks).
 
 ## Interacting with the ledger
 
