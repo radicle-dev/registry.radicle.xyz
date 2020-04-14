@@ -48,7 +48,7 @@ Now that your node is fully synced, you can use it to list all organizations tha
 are registered in the Radicle network.
 
 ```bash
-radicle-registry-cli orgs list --node-host localhost
+radicle-registry-cli org list
 ```
 
 Find other queries you can run at [Querying the ledger](#querying-the-ledger).
@@ -69,7 +69,7 @@ This will print the SS58 address for your mining account.
 You can now run a mining node:
 
 ```bash
-radicle-registry-node --miner <address>
+radicle-registry-node --mine <address>
 ```
 
 If your node successfully mined a block and imported it will log “Imported own
