@@ -13,24 +13,24 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/styles.e11d9cce.css">
+<link rel="stylesheet" href="/styles.60f7f9ae.css">
 
 
 <link rel="preload" href="/styles.c8a6f899.js" as="script">
 
-<link rel="preload" href="/runtime~main.0e65bed9.js" as="script">
+<link rel="preload" href="/runtime~main.85689da7.js" as="script">
 
-<link rel="preload" href="/main.437dd9ca.js" as="script">
+<link rel="preload" href="/main.a92fa73f.js" as="script">
 
-<link rel="preload" href="/1.d8074a42.js" as="script">
+<link rel="preload" href="/1.bc2a05d0.js" as="script">
 
-<link rel="preload" href="/19.ab76781d.js" as="script">
+<link rel="preload" href="/19.1ab26979.js" as="script">
 
 <link rel="preload" href="/20ac7829.3882e254.js" as="script">
 
 <link rel="preload" href="/17896441.b4b390d8.js" as="script">
 
-<link rel="preload" href="/d589d3a7.b3fe6639.js" as="script">
+<link rel="preload" href="/d589d3a7.38d20cbe.js" as="script">
 
 </head>
 <body>
@@ -43,9 +43,9 @@ genesis block.</p><p>To start a node, run:</p><div class="mdxCodeBlock_iHAB"><pr
 start syncing the chain. You’ll see a log line similar to this one:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-undefined codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">12:39:12.713 INFO  substrate  Idle (3 peers), best: #936 (0x2fbe…6374) ...</span></div></code></pre></div><p>ⓘ This log informs you that the node is connected to three other nodes
 and that the best block it has imported so far has height 936 and hash <code>0x2fbe…6374</code>.</p><p>Your node is fully synced with the network if the height of the best block does
 not change rapidly anymore.</p><p>Now that your node is fully synced, you can use it to list all organizations that
-are registered in the Radicle network.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli orgs list --node-host localhost</span></div></code></pre></div><p>Find other queries you can run at <a href="#querying-the-ledger">Querying the ledger</a>.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="mining-blocks"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#mining-blocks" title="Direct link to heading">#</a>Mining Blocks</h2><p>You can support the network by mining blocks. Miners receive rewards from
+are registered in the Radicle network.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli org list</span></div></code></pre></div><p>Find other queries you can run at <a href="#querying-the-ledger">Querying the ledger</a>.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="mining-blocks"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#mining-blocks" title="Direct link to heading">#</a>Mining Blocks</h2><p>You can support the network by mining blocks. Miners receive rewards from
 successfully mined blocks. To collect your rewards, you need an account.</p><p>Generate an account for mining:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli account generate mining</span></div></code></pre></div><p>This will print the SS58 address for your mining account.
-You can now run a mining node:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-node --miner </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">address</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p>If your node successfully mined a block and imported it will log “Imported own
+You can now run a mining node:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-node --mine </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">address</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p>If your node successfully mined a block and imported it will log “Imported own
 block”:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-undefined codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">15:50:13.041 INFO radicle_registry_node::service  Imported own block #1322 (0xefd1…4445)</span></div></code></pre></div><p>Depending on how lucky you are mining a block might take minutes or hours.</p><p>When your node has mined a block, your mining account receives some block
 rewards. Check your balance with</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli account balance </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">address</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p>At the moment, only single-threaded mining is supported. Follow <a href="https://github.com/radicle-dev/radicle-registry/issues/298">this
 issue</a> for updates.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="interacting-with-the-ledger"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#interacting-with-the-ledger" title="Direct link to heading">#</a>Interacting with the ledger</h2><p>Let&#x27;s go through how you can query the ledger and submit transactions.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="querying-the-ledger"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#querying-the-ledger" title="Direct link to heading">#</a>Querying the ledger</h3><p>Run some of the commands to have a view over the current state of our ledger.</p><ul><li><p>List all the registered orgs:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli org list</span></div></code></pre></div></li><li><p>List all the registered projects:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli project list</span></div></code></pre></div></li><li><p>List all the registered users:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli </span><span class="token function" style="color:rgb(130, 170, 255)">users</span><span class="token plain"> list</span></div></code></pre></div></li></ul><p>Explore our CLI to find more queries you can run.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="submitting-a-transaction"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#submitting-a-transaction" title="Direct link to heading">#</a>Submitting a transaction</h3><ol><li><p>Generate an account</p><p>You need an account to author transactions.
@@ -60,19 +60,19 @@ You can specify a custom fee with <code>--fee &lt;amount&gt;</code> to gain prio
 
 <script src="/styles.c8a6f899.js"></script>
 
-<script src="/runtime~main.0e65bed9.js"></script>
+<script src="/runtime~main.85689da7.js"></script>
 
-<script src="/main.437dd9ca.js"></script>
+<script src="/main.a92fa73f.js"></script>
 
-<script src="/1.d8074a42.js"></script>
+<script src="/1.bc2a05d0.js"></script>
 
-<script src="/19.ab76781d.js"></script>
+<script src="/19.1ab26979.js"></script>
 
 <script src="/20ac7829.3882e254.js"></script>
 
 <script src="/17896441.b4b390d8.js"></script>
 
-<script src="/d589d3a7.b3fe6639.js"></script>
+<script src="/d589d3a7.38d20cbe.js"></script>
 
 
 </body>
