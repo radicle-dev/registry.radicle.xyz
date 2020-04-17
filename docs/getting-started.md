@@ -79,7 +79,7 @@ Run some of the commands to have a view over the current state of our ledger.
 
 - List all the registered users:
     ```bash
-    radicle-registry-cli users list
+    radicle-registry-cli user list
     ```
 
 Explore our CLI to find more queries you can run.
