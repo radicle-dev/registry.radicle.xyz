@@ -31,3 +31,11 @@ $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Cloudfare
+
+We have Cloudflare set up on `radicle.run` to:
+
+- manage DNS records
+- offer SSL certificates for all sub-domains
+- benefict from its CDN features (speed, caching, security)
