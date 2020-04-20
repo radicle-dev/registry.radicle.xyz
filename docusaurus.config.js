@@ -15,10 +15,9 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/intro', label: 'Docs', position: 'left'},
+        {to: '/intro', label: 'Docs', position: 'left'},
         {href: 'https://radicle.community', label: 'Community', position: 'left'},
-        {href: 'https://radicle.xyz/towards-decentralized-code-collaboration.html', label: 'Blog', position: 'left'},
-        {to: 'docs/faq', label: 'FAQ', position: 'left'},
+        {to: '/faq', label: 'FAQ', position: 'left'},
         {
           href: 'https://github.com/radicle-dev',
           label: 'GitHub',
@@ -34,15 +33,11 @@ module.exports = {
           items: [
             {
               label: 'Intro',
-              to: 'docs/intro',
+              to: '/intro',
             },
             {
-              label: 'Why Radicle?',
-              to: 'docs/why',
-            },
-            {
-              label: 'The Radicle Network',
-              to: 'docs/network',
+              label: 'Getting started',
+              to: '/getting-started',
             },
           ],
         },
@@ -50,11 +45,11 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/radicle',
+              label: '#radicle Freenode ',
+              href: 'irc://irc.freenode.net/radicle',
             },
             {
-              label: 'Community forum',
+              label: 'Forum',
               href: 'https://radicle.community/',
             },
           ],
@@ -62,10 +57,6 @@ module.exports = {
         {
           title: 'Social',
           items: [
-            {
-              label: 'Blog',
-              href: 'https://radicle.xyz/towards-decentralized-code-collaboration.html',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/radicle-dev',
@@ -85,6 +76,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '', // Set to empty string
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/radicle-dev/radicle-run/edit/master/website/',
