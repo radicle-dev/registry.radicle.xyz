@@ -6,7 +6,7 @@ sidebar_label: FAQ
 
 ### What is the "radicle registry"?
 
-The radicle registry is a decentralized identity and governance service for free and open source software communities. It provides a trustless layer for reading, writing and coordinating around project metadata.
+The radicle registry is a decentralized identity and governance service for free and open source software communities. It provides a trustless layer for reading, writing and coordinating around software project metadata.
 
 ### What problem does the registry solve?
 
@@ -28,6 +28,10 @@ Finally, the Registry allows developers to collectively manage projects without 
 
 With Radicle `Orgs`, organizational functionality like access control, permissions, roles, and community governance is built upon trustless foundations and public keys. This approach provides a more flexible and secure way to transfer ownership, add or remove members, manage contributions, change licenses or more generally decide upon the meta-governance of the project.
 
+### What is RAD?
+
+RAD is the native asset of the radicle registry.
+
 ### Why not use a federated architecture instead?
 
 The decision to use a consensus protocol instead of a federated architecture lies in the fact that federated services cannot be offline-first and don’t offer sovereign identity, as users are tied to specific instances and thus subject to some of the same drawbacks as centralized services.
@@ -36,4 +40,4 @@ The decision to use a consensus protocol instead of a federated architecture lie
 
 Proof-of-work is computionally intesive, which unfortunately requires a lot of electricity. This decision didn't come light and we've done thorough research with all existing alternatives.
 
-While each alternative comes with different trade-offs, proof-of-work is currently the most reliable way to develop compact light client and build-up an immutable history ledger.
+While each alternative comes with different trade-offs, proof-of-work is currently the best-in-class solution when designing for trust minimization.

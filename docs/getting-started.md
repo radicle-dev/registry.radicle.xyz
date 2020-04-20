@@ -4,9 +4,7 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-This guide explains how you can participate in the `Radicle Friends & Family Net
-(FFnet)` blockchain network.
-
+This guide explains how you can participate in the current testnet.
 
 ## Installation
 
@@ -31,7 +29,7 @@ To start a node, run:
 radicle-registry-node
 ```
 
-The node will automatically connect to the FFnet via a boot node and
+The node will automatically connect to the network via a boot node and
 start syncing the chain. You’ll see a log line similar to this one:
 
 ```
