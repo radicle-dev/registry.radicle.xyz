@@ -15,9 +15,9 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: '/intro', label: 'Docs', position: 'left'},
+        {to: '/docs/intro', label: 'Docs', position: 'left'},
         {href: 'https://radicle.community', label: 'Community', position: 'left'},
-        {to: '/faq', label: 'FAQ', position: 'left'},
+        {to: '/docs/faq', label: 'FAQ', position: 'left'},
         {
           href: 'https://github.com/radicle-dev',
           label: 'GitHub',
@@ -33,11 +33,11 @@ module.exports = {
           items: [
             {
               label: 'Intro',
-              to: '/intro',
+              to: '/docs/intro',
             },
             {
               label: 'Getting started',
-              to: '/getting-started',
+              to: '/docs/getting-started',
             },
           ],
         },
@@ -76,7 +76,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          routeBasePath: '', // Set to empty string
+          //routeBasePath: '', // Set to empty string to remove /doc/
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/radicle-dev/radicle-run/edit/master/website/',
