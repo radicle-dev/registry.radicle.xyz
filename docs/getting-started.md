@@ -48,7 +48,7 @@ Now that your node is fully synced, you can use it to list all organizations tha
 are registered in the Radicle network.
 
 ```bash
-radicle-registry-cli org list
+radicle-registry-cli org list --node-host 127.0.0.1
 ```
 
 Find other queries you can run at [Querying the ledger](#querying-the-ledger).
@@ -62,6 +62,10 @@ You can find out how to do that on the [full node setup page](node#Mining_Blocks
 ## Interacting with the ledger
 
 Let's go through how you can query the ledger and submit transactions.
+
+ⓘ To connect directly to the node you might have running locally, add
+   `--node-host 127.0.0.1` to the following commands or set it via the
+   environment with `export RAD_NODE_HOST=127.0.0.1`.
 
 ### Querying the ledger
 
