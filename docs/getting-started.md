@@ -13,9 +13,11 @@ This guide requires you to install the following binaries:
 * `radicle-registry-node`
 * `radicle-registry-cli`
 
-Download the latest versions for the `x86_64-unknown-linux-gnu` target <a href="https://github.com/radicle-dev/radicle-registry/releases/latest" target="_blank" rel="noopener noreferrer">here</a>.
+Download the latest versions for the x86-64 GNU/Linux platform <a href="https://github.com/radicle-dev/radicle-registry/releases/latest" target="_blank" rel="noopener noreferrer">here</a>.
 
-For other targets, you will need to build the binaries <a href="https://github.com/radicle-dev/radicle-registry#build-from-source" target="_blank" rel="noopener noreferrer">from source</a>.
+For other platforms, you will need to build the binaries <a href="https://github.com/radicle-dev/radicle-registry#build-from-source" target="_blank" rel="noopener noreferrer">from source</a>.
+
+The binaries should be placed in the local `bin` directory or added to `$PATH`.
 
 ## Running a node
 

@@ -6,7 +6,7 @@ sidebar_label: Introduction
 
 The Radicle Registry is a decentralized identity and governance service for free and open source software communities. It provides a trustless layer for reading, writing and coordinating around project metadata and it is designed as a domain-specific, permissionless blockchain using Nakamoto consensus.
 
-The full node daemon, `TBD` is written in Rust and based on <a href="https://substrate.dev/" target="_blank" rel="noopener noreferrer">substrate</a>. By running a full node, you can participate in securing the network.
+The full node daemon, `radicle-registry-node` is written in Rust and based on <a href="https://substrate.dev/" target="_blank" rel="noopener noreferrer">substrate</a>. By running a full node, you can participate in securing the network.
 
 To set up your own node, check out our [Getting Started](#getting-started) guide.
 
