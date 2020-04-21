@@ -139,7 +139,7 @@ can either be specified as options at the end of a command or as environment var
     ⓘ See [Running a node](getting-started#running-a-node) to be able to connect directly to
     the node you eventually have running locally.
 
-    Optional, defaults to the `ffnet` network.
+    Optional, defaults to a node on the `ffnet` that the Radicle team operates.
 
     ```
     --node-host <node-host>
