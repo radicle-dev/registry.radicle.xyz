@@ -4,7 +4,7 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-This guide explains how you can participate in the current testnet.
+This guide explains how you can participate in the current alpha testnet.
 
 ## Installation
 
@@ -115,7 +115,7 @@ Explore our CLI to find more queries you can run.
     To interact with the ledger, you first need to get some RAD into your account to have enough
     funds to pay for transactions fees.
 
-    Get in touch with us at <a href="https://webchat.freenode.net/#radicle" target="_blank">irc://irc.freenode.net/#radicle</a>
+    Get in touch with us at [irc://irc.freenode.net/#radicle](<https://webchat.freenode.net/#radicle>)
     to request some RAD for your account. Please, bring your SS58 account address along.
 
 3. Check your balance

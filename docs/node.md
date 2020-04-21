@@ -1,7 +1,7 @@
 ---
 id: node
-title: Setup full node
-sidebar_label: Setup full node
+title: Setup a full node
+sidebar_label: Setup a full node
 ---
 
 ## Startup
@@ -21,7 +21,7 @@ radicle-registry-node --data-path <PATH>
 
 ### Connecting to the network
 
-The node connects by default to the FFNet network.
+The node connects by default to the testnet network.
 It has a list of known nodes, which can be called to join the network for the first time.
 You can use your own list of bootstrap nodes with a startup parameter:
 
@@ -31,6 +31,7 @@ radicle-registry-node --bootnodes <ADDR>
 
 The addresses must be expressed as libp2p multiaddresses with a peer ID, e.g.
 `/ip4/35.233.120.254/tcp/30333/p2p/QmRpheLN4JWdAnY7HGJfWFNbfkQCb6tFf4vvA6hgjMZKrR`.
+
 For more information visit [libp2p documentation](https://docs.libp2p.io/concepts/addressing/).
 
 ## Mining Blocks
@@ -51,15 +52,15 @@ You can now run a mining node:
 radicle-registry-node --mine <address>
 ```
 
-If your node successfully mined a block and imported it will log “Imported own
-block”:
+If your node successfully mined a block and imported it will log `Imported own
+block`:
 ```
 15:50:13.041 INFO radicle_registry_node::service  Imported own block #1322 (0xefd1…4445)
 ```
 Depending on how lucky you are mining a block might take minutes or hours.
 
 When your node has mined a block, your mining account receives some block
-rewards. Check your balance with
+rewards. Check your balance with:
 
 ```bash
 radicle-registry-cli account balance <address>
@@ -68,12 +69,12 @@ radicle-registry-cli account balance <address>
 At the moment, only single-threaded mining is supported. Follow [this
 issue](https://github.com/radicle-dev/radicle-registry/issues/298) for updates.
 
-## The node key
+## Node key
 
 Every node has a key pair, which is used to identify it on the P2P network.
 It's useful for building ties with other nodes.
 By default the key pair is generated on every startup, but you can set it manually to store and
-reuse it later.
+reuse later.
 To do that, you must pass the private key file on the node startup:
 
 ```bash
@@ -82,7 +83,7 @@ radicle-registry-node --node-key-file <KEY_FILE>
 
 The file must contain exactly 32 bytes of raw data.
 It will be used without any transformations as an Ed25519 private key.
-If the file doesn't exist, it's going to be created and filled with a new random key.
+If the file doesn't exist, it will be created and filled with a new random key.
 
 ## Monitoring
 

@@ -10,3 +10,5 @@ In a world where nearly all software relies on open source code, maintaining the
 Radicle was conceived as an alternative. Its goal is to eliminate intermediaries and create a sovereign, peer-to-peer ecosystem, that is secure and sustainable.
 
 "At the core of the open source ethos is the idea of liberty. Open source is about inverting power structures and creating access and opportunities for everyone." — GitHub employees' letter to GitHub
+
+Read more about our journey [towards decentralized code collaboration](https://radicle.xyz/towards-decentralized-code-collaboration.html).
