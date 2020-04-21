@@ -11,24 +11,24 @@ and have followed the getting started steps regarding [submitting a transaction]
 ## Available transactions
 
 Discover all the available transactions that you can submit via the CLI.
-Run the provided help commands to learn more about the arguments
+Run the provided `--help` commands to learn more about the arguments
 and behaviour of each one of them.
 
 ⓘ All the transactions provide the same [Command-Line Options](#command-line-options).
 
-- Transfer funds from an account to another
+- Transfer funds from an account to another:
 
     ``` bash
     radicle-registry-cli account transfer --help
     ```
 
-- Transfer funds from an org's account to another account
+- Transfer funds from an org's account to another account:
 
     ``` bash
     radicle-registry-cli org transfer --help
     ```
 
-- Register entities
+- Register entities:
 
     You can register users, orgs, and projects in the Radicle Registry.
 
@@ -47,7 +47,7 @@ and behaviour of each one of them.
         radicle-registry-cli project register --help
         ```
 
-- Unregister entities
+- Unregister entities:
 
     You can unregister orgs and users from the Radicle Registry.
 

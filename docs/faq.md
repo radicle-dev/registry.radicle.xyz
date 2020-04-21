@@ -4,42 +4,34 @@ title: FAQ
 sidebar_label: FAQ
 ---
 
-### What is the "registry"?
+### What is the "Radicle Registry"?
 
-The Registry is the canonical source for all project and user metadata, including identity. It is a decentralized service which provides trustless read and write access to this data.
+The Radicle Registry is a decentralized identity and governance service for free and open source software communities. It provides a trustless layer for reading, writing and coordinating around software project metadata.
 
-### What problem does the registry solve?
+### What problem does the Registry solve?
 
-The problem is that of maintaining a global, immutable and always available identity service for organizations and users. The registry offers such service in a decentralized manner.
+In essence, the Registry provides users with the trusted, auditable and shared view of the network that is typically lacking in peer-to-peer solutions, delivering the same connected "social" layer that attracted developers to centralized code collaboration platforms like GitHub or Gitlab.
 
-### Why is canonical name registry for open source projects important?
+### How does the Registry work?
 
-The registry enables all users to have a wallet that is linked to their code collaboration identity. It enables orgs to have a wallet and manage funds linked to projects, and it allows users and orgs to benefit from a sovereign identity.
+We designed the Registry as a domain-specific, permissionless blockchain using Nakamoto consensus and licensed under GPL. We chose a domain-specific chain over a generalized one to optimize for a user experience that is on par with hosted platforms: fast, low-fee transactions, scalable, and customizable.
 
-### How does the registry work?
-
-We designed the registry as a permissionless blockchain using Nakamoto consensus and proof-of-work. We chose Nakamoto consensus for its operational simplicity, and proof-of-work for its best-in-class support for light clients.
+In addition, keeping in mind the principle of trust minimization, we chose Nakamoto consensus for its operational simplicity and best-in-class support for light clients.
 
 ### What does it look like for the user?
 
-The user is not directly exposed to the registry, but uses the registry's services through end-user applications. The user is able to register orgs and user handles, as well as manage funds held by the registry.
+From a user point of view, the Registry allows any developer to issue a persistent self-sovereign identity. Unlike centralized platforms, identities on Radicle are owned and managed by their creators. Paired with the public key infrastructure present in [Radicle Link, the peer-to-peer replication layer](https://radicle.xyz/radicle-link.html), Radicle identities are human readable, always available, and far more secure than their hosted equivalents.
 
-### What does the registry do for sustainability in FOSS?
+In addition to identities, the Registry gives maintainers the ability to anchor important project information (i.e. states and histories) in an immutable and auditable way. This yields a persistent & probable history of contributions and alleviates any weakness at the replication layer by providing users with the latest available information.
 
-The registry enables native value transfer, ie. transfer of money and native assets between users. This allows developers to monetize their work or services offered on the network, with little to no friction.
+Finally, the Registry allows developers to collectively manage projects without an intermediary with Radicle ‘Orgs’. A Radicle Org is a sovereign collective of developers that govern a set of projects. They are similar to GitHub or Gitlab orgs but are platform independent and can be managed among multiple users — not just admins. In practice, a Radicle `Org` shares a set of members and projects, a unique name, and a set of contracts or rulesets determining what permissions the members have over the projects.
 
-### Doesn't proof-of-work promote carbon emissions?
+With Radicle `Orgs`, organizational functionality like access control, permissions, roles, and community governance, is built upon trustless foundations and public keys. This approach provides a more flexible and secure way to transfer ownership, add or remove members, manage contributions, change licenses or more generally decide upon the meta-governance of the project.
 
-Proof-of-work is computionally intesive, which unfortunately requires a lot of electricity. This decision didn't come light and we've done thorough research with all existing alternatives.
+### What is RAD?
 
-While each alternative comes with different trade-offs, proof-of-work is currently the most reliable way to develop compact light client and build-up an immutable history ledger.
+RAD is the native asset of the Radicle Registry. RAD can be transferred between participants in the network and is used verify the records and transactions performed on the Registry.
 
-## Code Collaboration
+### Why not use a federated architecture instead?
 
-### How does code collaboration currently work?
-
-### Does Radicle Registry replace Github?
-
-Radicle is indeed a secure alternative to platforms such as Github.
-
-### What can you do with Radicle Registry today?
+The decision to use a consensus protocol instead of a federated architecture lies in the fact that federated services cannot be offline-first and don’t offer sovereign identity, as users are tied to specific instances and thus subject to some of the same drawbacks as centralized services.
