@@ -13,9 +13,11 @@ This guide requires you to install the following binaries:
 * `radicle-registry-node`
 * `radicle-registry-cli`
 
-Download the latest versions for the `x86_64-unknown-linux-gnu` target [here](https://github.com/radicle-dev/radicle-registry/releases/latest).
+Download the latest versions for the x86-64 GNU/Linux platform <a href="https://github.com/radicle-dev/radicle-registry/releases/latest" target="_blank" rel="noopener noreferrer">here</a>.
 
-For other targets, you will need to build the binaries [from source](https://github.com/radicle-dev/radicle-registry#build-from-source).
+For other platforms, you will need to build the binaries <a href="https://github.com/radicle-dev/radicle-registry#build-from-source" target="_blank" rel="noopener noreferrer">from source</a>.
+
+The binaries should be placed in the local `bin` directory or added to `$PATH`.
 
 ## Running a node
 
@@ -115,7 +117,7 @@ Explore our CLI to find more queries you can run.
     To interact with the ledger, you first need to get some RAD into your account to have enough
     funds to pay for transactions fees.
 
-    Get in touch with us at [irc://irc.freenode.net/#radicle](<https://webchat.freenode.net/#radicle>)
+    Get in touch with us at <a href="https://webchat.freenode.net/#radicle" target="_blank" rel="noopener noreferrer">irc://irc.freenode.net/#radicle</a>
     to request some RAD for your account. Please, bring your SS58 account address along.
 
 3. Check your balance

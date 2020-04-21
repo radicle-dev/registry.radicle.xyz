@@ -1,6 +1,6 @@
 # Website
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+This website is built using <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus 2</a>, a modern static website generator.
 
 ### Installation
 
