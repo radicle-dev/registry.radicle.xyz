@@ -87,6 +87,9 @@ and behaviour of each one of them.
         --fee 20
     ```
 
+    ⓘ The recipient of a transfer can either be a SS58 address
+       or one of your local account names.
+
 3. Unregister an org
 
     This example unregisters an org named "Hooli". For it to succeed, such an org must be registered in
