@@ -31,8 +31,7 @@ radicle-registry-node --bootnodes <ADDR>
 
 The addresses must be expressed as libp2p multiaddresses with a peer ID, e.g.
 `/ip4/35.233.120.254/tcp/30333/p2p/QmRpheLN4JWdAnY7HGJfWFNbfkQCb6tFf4vvA6hgjMZKrR`.
-
-For more information visit [libp2p documentation](https://docs.libp2p.io/concepts/addressing/).
+For more information visit <a href="https://docs.libp2p.io/concepts/addressing/" target="_blank" rel="noopener noreferrer">libp2p documentation</a>.
 
 ## Mining Blocks
 
@@ -66,8 +65,7 @@ rewards. Check your balance with:
 radicle-registry-cli account balance <address>
 ```
 
-At the moment, only single-threaded mining is supported. Follow [this
-issue](https://github.com/radicle-dev/radicle-registry/issues/298) for updates.
+At the moment, only single-threaded mining is supported. Follow <a href="https://github.com/radicle-dev/radicle-registry/issues/298" target="_blank" rel="noopener noreferrer">this issue</a> for updates.
 
 ## Node key
 

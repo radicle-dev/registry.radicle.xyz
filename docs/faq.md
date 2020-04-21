@@ -20,7 +20,7 @@ In addition, keeping in mind the principle of trust minimization, we chose Nakam
 
 ### What does it look like for the user?
 
-From a user point of view, the Registry allows any developer to issue a persistent self-sovereign identity. Unlike centralized platforms, identities on Radicle are owned and managed by their creators. Paired with the public key infrastructure present in [Radicle Link, the peer-to-peer replication layer](https://radicle.xyz/radicle-link.html), Radicle identities are human readable, always available, and far more secure than their hosted equivalents.
+From a user point of view, the Registry allows any developer to issue a persistent self-sovereign identity. Unlike centralized platforms, identities on Radicle are owned and managed by their creators. Paired with the public key infrastructure present in <a href="https://radicle.xyz/radicle-link.html" target="_blank" rel="noopener noreferrer">Radicle Link, the peer-to-peer replication layer</a>, Radicle identities are human readable, always available, and far more secure than their hosted equivalents.
 
 In addition to identities, the Registry gives maintainers the ability to anchor important project information (i.e. states and histories) in an immutable and auditable way. This yields a persistent & probable history of contributions and alleviates any weakness at the replication layer by providing users with the latest available information.
 
