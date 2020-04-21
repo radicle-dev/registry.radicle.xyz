@@ -2,7 +2,7 @@ module.exports = {
   title: 'Radicle Registry Documentation',
   tagline: 'The Radicle Registry Developer Hub',
   url: 'https://radicle-run.github.io',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   favicon: 'img/favicon.ico',
   organizationName: 'radicle-dev', // Usually your GitHub org/user name.
   projectName: 'radicle-run', // Usually your repo name.
