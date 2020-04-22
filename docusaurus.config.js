@@ -1,11 +1,11 @@
 module.exports = {
-  title: 'Radicle Registry Documentation',
+  title: 'The Radicle Registry',
   tagline: 'The Radicle Registry Developer Hub',
-  url: 'https://radicle-run.github.io',
+  url: 'https://registry.radicle.xyz',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'radicle-dev', // Usually your GitHub org/user name.
-  projectName: 'radicle-run', // Usually your repo name.
+  projectName: 'registry.radicle.xyz', // Usually your repo name.
   themeConfig: {
     disableDarkMode: true, // Disables darkmode switch
     navbar: {
@@ -79,7 +79,7 @@ module.exports = {
           //routeBasePath: '', // Set to empty string to remove /doc/
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/radicle-dev/radicle-run/edit/master/website/',
+            'https://github.com/radicle-dev/registry.radicle.xyz',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
