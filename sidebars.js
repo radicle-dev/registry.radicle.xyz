@@ -7,8 +7,6 @@
 
 module.exports = {
   someSidebar: {
-    Radicle: ['intro','why'],
-    Guides: ['getting-started','node','submit-transactions'],
-    Reference: ['faq'],
+    Registry: ['intro','why','getting-started','node','submit-transactions','faq'],
   },
 };

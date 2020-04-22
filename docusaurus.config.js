@@ -7,6 +7,7 @@ module.exports = {
   organizationName: 'radicle-dev', // Usually your GitHub org/user name.
   projectName: 'registry.radicle.xyz', // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     disableDarkMode: true, // Disables darkmode switch
     navbar: {
       title: 'Radicle Registry',
