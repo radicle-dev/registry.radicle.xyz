@@ -62,7 +62,7 @@ When your node has mined a block, your mining account receives some block
 rewards. Check your balance with:
 
 ```bash
-radicle-registry-cli account balance <address>
+radicle-registry-cli account show <address_or_name>
 ```
 
 At the moment, only single-threaded mining is supported. Follow <a href="https://github.com/radicle-dev/radicle-registry/issues/298" target="_blank" rel="noopener noreferrer">this issue</a> for updates.
