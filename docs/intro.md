@@ -8,7 +8,7 @@ The Radicle Registry is a decentralized identity and governance service for free
 
 The full node daemon, `radicle-registry-node` is written in Rust and based on <a href="https://substrate.dev/" target="_blank" rel="noopener noreferrer">substrate</a>. By running a full node, you can participate in securing the network.
 
-To set up your own node, check out our [Getting Started](#getting-started) guide.
+To set up your own node, check out our [Getting Started](getting-started) guide.
 
 Read more about the Registry and the Radicle network on our <a href="https://radicle.xyz/" target="_blank" rel="noopener noreferrer">website</a>.
 

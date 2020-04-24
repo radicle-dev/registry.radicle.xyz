@@ -57,7 +57,7 @@ Find other queries you can run at [Querying the ledger](#querying-the-ledger).
 ## Mining Blocks
 
 You can support the network and receive rewards by mining blocks.
-You can find out how to do that on the [full node setup page](node#Mining_Blocks).
+You can find out how to do that on the [full node setup page](node#mining-blocks).
 
 ## Interacting with the ledger
 

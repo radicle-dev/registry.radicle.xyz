@@ -16,13 +16,13 @@ and behaviour of each one of them.
 
 ⓘ All the transactions provide the same [Command-Line Options](#command-line-options).
 
-- Transfer funds from an account to another:
+- Transfer funds from the author's account to another account, which can be a local, org's, or user's account.
 
     ``` bash
     radicle-registry-cli account transfer --help
     ```
 
-- Transfer funds from an org's account to another account:
+Transfer funds from an org's account to another account, which can be a local, org's, or user's account.
 
     ``` bash
     radicle-registry-cli org transfer --help
@@ -109,10 +109,9 @@ can either be specified as options at the end of a command or as environment var
 
     ⚠ Requires having [getting started submitting a transaction](getting-started#submitting-a-transaction).
 
-    Mandatory for all transactions. The author option lets you specify the account that is
-    used to sign the transaction. You can use the `account` command group to manage your
-    accounts.
-    that you want to use to sign a transaction.
+    Mandatory for all transactions. The author option lets you specify the local account that
+    is used to sign the transaction. You can use the `account` command group to generate
+    and list the local accounts that you can to use to sign transactions.
 
     ```
     --author <account_name>
