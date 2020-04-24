@@ -129,7 +129,7 @@ Explore our CLI to find more queries you can run.
     Verify that you have received funds by running:
 
     ``` bash
-    radicle-registry-cli account balance <address>
+    radicle-registry-cli account show <address_or_name>
     ```
 
 4. Submit your first transaction
