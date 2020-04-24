@@ -124,6 +124,24 @@ In order to expose the Prometheus interface you need to pass this flag on the no
 radicle-registry-node --prometheus-external
 ```
 
+### Polkadot telemetry
+
+The node by default sends some basic statistics to the polkadot telemetry server.
+All the data collected from the network can be viewed live
+[here](https://telemetry.polkadot.io/#list/Radicle%20Registry%20ffnet).
+
+In order to make the node easier to identify it can be given a name:
+
+```bash
+radicle-registry-node --name "My beloved node"
+```
+
+The telemetry can be disabled:
+
+```bash
+radicle-registry-node --no-telemetry
+```
+
 ## The RPC interface
 
 The node always exposes the RPC interface for communication.
