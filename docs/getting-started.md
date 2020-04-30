@@ -57,7 +57,7 @@ Find other queries you can run at [Querying the ledger](#querying-the-ledger).
 ## Mining Blocks
 
 You can support the network and receive rewards by mining blocks.
-You can find out how to do that on the [full node setup page](node).
+You can find out how to do that on the [full node setup page](/docs/node).
 
 ## Interacting with the ledger
 
@@ -144,4 +144,5 @@ Explore our CLI to find more queries you can run.
     ⚠ Running this command will submit the transaction with a default fee value.
     You can specify a custom fee with `--fee <amount>` to gain priority.
 
-    Find other transactions you can submit and learn more details at [Submit Transactions](submit-transactions).
+    Find other transactions you can submit and learn more details at
+    [Submit Transactions](/docs/submit-transactions).

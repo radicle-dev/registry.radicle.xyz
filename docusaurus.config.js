@@ -80,7 +80,7 @@ module.exports = {
           //routeBasePath: '', // Set to empty string to remove /doc/
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/radicle-dev/registry.radicle.xyz',
+            'https://github.com/radicle-dev/registry.radicle.xyz/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
