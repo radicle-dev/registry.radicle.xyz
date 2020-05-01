@@ -42,11 +42,8 @@ successfully mined blocks. You can run a mining node with the following command.
 radicle-registry-node --mine <address>
 ```
 
-`address` is the public SS58 address of the account that should receive the
-mining rewards. You can run `radic-registry-cli key-pair generate` to
-generate a key pair for a new account and print the account’s address.
-(See also [“Submitting a transaction”](/docs/getting-started#submitting-a-transaction))
-transaction”](/docs/getting-started#submitting-a-transaction))
+The `address` argument is the public SS58 address of the account that should receive the
+mining rewards. If you wish to use a dedicated account for mining, use `radic-registry-cli key-pair generate` to generate a new key pair, which will print the associated account’s ss58 address that you can now pass to the command above. Otherwise, run `radic-registry-cli key-pair list` to find the ss58 address of a key pair you already have.
 
 If your node successfully mined a block and imported it will log `Imported own
 block`:

@@ -16,13 +16,13 @@ and behaviour of each one of them.
 
 ⓘ All the transactions provide the same [Command-Line Options](#command-line-options).
 
-- Transfer funds from the author's account to another account, which can be a local, org's, or user's account.
+- Transfer funds from the author's account to another account.
 
     ``` bash
     radicle-registry-cli account transfer --help
     ```
 
-Transfer funds from an org's account to another account, which can be a local, org's, or user's account.
+Transfer funds from an org's account to another account.
 
     ``` bash
     radicle-registry-cli org transfer --help
@@ -65,9 +65,9 @@ Transfer funds from an org's account to another account, which can be a local, o
 
 1. Register a user
 
-    This example registers a user named "neo" in the registry using a
-    locally generated account (that happens to also be) named "neo"
-    to sign the transactions, specifying `100` as the fee.
+    This example registers a user named "neo" in the registry using the
+    local key pair (that happens to also be) named "neo" to sign the
+    transactions, specifying `100` as the fee.
 
     ``` bash
     radicle-registry-cli user register neo --author neo --fee 100
@@ -88,7 +88,7 @@ Transfer funds from an org's account to another account, which can be a local, o
     ```
 
     ⓘ The recipient of a transfer can either be a SS58 address
-       or one of your local account names.
+       or the name of one of your local key pairs.
 
 3. Unregister an org
 
@@ -109,13 +109,13 @@ can either be specified as options at the end of a command or as environment var
 
     ⚠ Requires having [getting started submitting a transaction](getting-started#submitting-a-transaction).
 
-    Mandatory for all transactions. The author option lets you specify the local account that
-    is used to sign the transaction. You can use the `account` command group to generate
-    and list the local accounts that you can to use to sign transactions.
+    Mandatory for all transactions. The author option lets you specify the key pair that
+    is used to sign the transaction. You can use the `key-pair` command group to `generate`
+    and `list` the key pairs that you can to use to sign transactions.
 
     ```
-    --author <account_name>
-        The name of the local account to be used to sign transactions
+    --author <key_pair_name>
+        The name of the local key pair to be used to sign transactions.
         [env: RAD_AUTHOR=]
     ```
 

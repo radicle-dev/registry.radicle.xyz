@@ -90,39 +90,45 @@ Explore our CLI to find more queries you can run.
 
 ### Submitting a transaction
 
+To submit a transaction, you need an account on the block chain,
+required to pay for [transaction fees](/docs/submit-transactions#transaction-fees).
+An account is controlled by a cryptographic key pair, from which
+the SS58 address that identifies it is derived.
+Key pairs are managed by the `radicle-registry-cli` and stored on disk.
 
-1. Generate an account
+1. Generate a key pair
 
-    You need an account to author transactions.
-    An account is a randomly generated key pair identified by a name of your choice.
-    To generate an account, run:
-
-    ```bash
-    radicle-registry-cli account generate <account_name>
-    ```
-
-    This command will give you the SS58 address for your new account.
-    E.g. generating an account named 'neo':
+    You need a key pair to author transactions.
+    The key pairs are randomly generated and identified by a name of your choice.
+    To generate a new key pair, run:
 
     ```bash
-    radicle-registry-cli account generate neo
-    ✓ Account generated successfully
-    ℹ SS58 address: 5HWP48i9TuP2VrRZrNeb6QzYpdUSE9BvyaptEqqHrLfH8ZPd
+    radicle-registry-cli key-pair generate <name>
     ```
 
-    You can always obtain the addresses of all your accounts by running:
+    This command will give you the SS58 address for your new key pair.
+    E.g. generating a key pair named 'neo':
+
+    ```bash
+    radicle-registry-cli key-pair generate neo
+    ✓ Key pair generated successfully
+    ⓘ SS58 address: 5HWP48i9TuP2VrRZrNeb6QzYpdUSE9BvyaptEqqHrLfH8ZPd
+    ```
+
+    You can always obtain the account addresses for all your key pairs by running:
 
     ``` bash
-    radicle-registry-cli account list
+    radicle-registry-cli key-pair list
     ```
 
 2. Request RADs
 
-    To interact with the ledger, you first need to get some RAD into your account to have enough
-    funds to pay for transactions fees.
+    To submit transactions, you first need to get some RAD into your account
+    to pay for transactions fees.
 
     Get in touch with us at <a href="https://webchat.freenode.net/#radicle" target="_blank" rel="noopener noreferrer">irc://irc.freenode.net/#radicle</a>
-    to request some RAD for your account. Please, bring your SS58 account address along.
+    to request some RAD for your account. Please, bring your SS58
+    account address along.
 
 3. Check your balance
 
@@ -138,7 +144,7 @@ Explore our CLI to find more queries you can run.
     For instance, you can register yourself as a user in our ledger by running:
 
     ``` bash
-    radicle-registry-cli user register <handle> --author <account_name>
+    radicle-registry-cli user register <handle> --author <key_pair_name>
     ```
 
     ⚠ Running this command will submit the transaction with a default fee value.
