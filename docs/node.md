@@ -36,20 +36,17 @@ For more information visit <a href="https://docs.libp2p.io/concepts/addressing/"
 ## Mining Blocks
 
 You can support the network by mining blocks. Miners receive rewards from
-successfully mined blocks. To collect your rewards, you need an account.
-
-Generate an account for mining:
-
-```bash
-radicle-registry-cli account generate mining
-```
-
-This will print the SS58 address for your mining account.
-You can now run a mining node:
+successfully mined blocks. You can run a mining node with the following command.
 
 ```bash
 radicle-registry-node --mine <address>
 ```
+
+`address` is the public SS58 address of the account that should receive the
+mining rewards. You can run `radic-registry-cli key-pair generate` to
+generate a key pair for a new account and print the account’s address.
+(See also [“Submitting a transaction”](/docs/getting-started#submitting-a-transaction))
+transaction”](/docs/getting-started#submitting-a-transaction))
 
 If your node successfully mined a block and imported it will log `Imported own
 block`:
