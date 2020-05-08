@@ -13,24 +13,24 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/styles.85d0e770.css">
+<link rel="stylesheet" href="/styles.342d7e2f.css">
 
 
 <link rel="preload" href="/styles.fcfa1394.js" as="script">
 
-<link rel="preload" href="/runtime~main.c57b466d.js" as="script">
+<link rel="preload" href="/runtime~main.21c4b916.js" as="script">
 
-<link rel="preload" href="/main.ff270e31.js" as="script">
+<link rel="preload" href="/main.0d7e2148.js" as="script">
 
-<link rel="preload" href="/1.f44ad047.js" as="script">
+<link rel="preload" href="/1.6f645428.js" as="script">
 
-<link rel="preload" href="/14.d9359a81.js" as="script">
+<link rel="preload" href="/14.c6ccd1dc.js" as="script">
 
 <link rel="preload" href="/20ac7829.18e21018.js" as="script">
 
 <link rel="preload" href="/17896441.33a269cf.js" as="script">
 
-<link rel="preload" href="/bb45da22.9c082d36.js" as="script">
+<link rel="preload" href="/bb45da22.04074a5f.js" as="script">
 
 </head>
 <body>
@@ -42,11 +42,8 @@ It has a list of known nodes, which can be called to join the network for the fi
 You can use your own list of bootstrap nodes with a startup parameter:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-node --bootnodes </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">ADDR</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p>The addresses must be expressed as libp2p multiaddresses with a peer ID, e.g.
 <code>/ip4/35.233.120.254/tcp/30333/p2p/QmRpheLN4JWdAnY7HGJfWFNbfkQCb6tFf4vvA6hgjMZKrR</code>.
 For more information visit <a href="https://docs.libp2p.io/concepts/addressing/" target="_blank" rel="noopener noreferrer">libp2p documentation</a>.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="mining-blocks"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#mining-blocks" title="Direct link to heading">#</a>Mining Blocks</h2><p>You can support the network by mining blocks. Miners receive rewards from
-successfully mined blocks. You can run a mining node with the following command.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-node --mine </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">address</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p><code>address</code> is the public SS58 address of the account that should receive the
-mining rewards. You can run <code>radic-registry-cli key-pair generate</code> to
-generate a key pair for a new account and print the account’s address.
-(See also <a href="/docs/getting-started#submitting-a-transaction">“Submitting a transaction”</a>)
-transaction”](/docs/getting-started#submitting-a-transaction))</p><p>If your node successfully mined a block and imported it will log <code>Imported own
+successfully mined blocks. You can run a mining node with the following command.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-node --mine </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">address</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p>The <code>address</code> argument is the public SS58 address of the account that should receive the
+mining rewards. If you wish to use a dedicated account for mining, use <code>radic-registry-cli key-pair generate</code> to generate a new key pair, which will print the associated account’s ss58 address that you can now pass to the command above. Otherwise, run <code>radic-registry-cli key-pair list</code> to find the ss58 address of a key pair you already have.</p><p>If your node successfully mined a block and imported it will log <code>Imported own
 block</code>:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-undefined codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">15:50:13.041 INFO radicle_registry_node::service  Imported own block #1322 (0xefd1…4445)</span></div></code></pre></div><p>Depending on how lucky you are mining a block might take minutes or hours.</p><p>When your node has mined a block, your mining account receives some block
 rewards. Check your balance with:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-bash codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">radicle-registry-cli account show </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">address_or_name</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span></div></code></pre></div><p>At the moment, only single-threaded mining is supported. Follow <a href="https://github.com/radicle-dev/radicle-registry/issues/298" target="_blank" rel="noopener noreferrer">this issue</a> for updates.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="node-key"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#node-key" title="Direct link to heading">#</a>Node key</h2><p>Every node has a key pair, which is used to identify it on the P2P network.
 It&#x27;s useful for building ties with other nodes.
@@ -75,19 +72,19 @@ You can enable that by passing a flag on the node startup:</p><div class="mdxCod
 
 <script src="/styles.fcfa1394.js"></script>
 
-<script src="/runtime~main.c57b466d.js"></script>
+<script src="/runtime~main.21c4b916.js"></script>
 
-<script src="/main.ff270e31.js"></script>
+<script src="/main.0d7e2148.js"></script>
 
-<script src="/1.f44ad047.js"></script>
+<script src="/1.6f645428.js"></script>
 
-<script src="/14.d9359a81.js"></script>
+<script src="/14.c6ccd1dc.js"></script>
 
 <script src="/20ac7829.18e21018.js"></script>
 
 <script src="/17896441.33a269cf.js"></script>
 
-<script src="/bb45da22.9c082d36.js"></script>
+<script src="/bb45da22.04074a5f.js"></script>
 
 
 </body>
