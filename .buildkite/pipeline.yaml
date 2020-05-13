@@ -1,0 +1,23 @@
+.step: &step
+  env:
+    DOCKER_IMAGE: gcr.io/opensourcecoin/registry.radicle.xyz/ci-base:b1c8b5630de965fa95d97821ee6f8ec0cdcd6193
+    DOCKER_FILE: ci/Dockerfile
+    SHARED_MASTER_CACHE: true
+  agents:
+    platform: "linux"
+    production: "true"
+
+steps:
+- label: "Build"
+  command: "ci/build"
+  <<: *step
+- wait
+- label: "Deploy"
+  branches: master
+  command: "ci/deploy"
+  <<: *step
+
+notify:
+  - email: "registry-devs@monadic.xyz"
+    if: |
+      build.state == "failed" && build.branch == "master"
