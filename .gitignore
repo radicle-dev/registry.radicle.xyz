@@ -9,7 +9,7 @@ node_modules
 .eslintcache
 
 yarn-error.log
-build
+/build
 .docusaurus
 .cache-loader
 types

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export YARN_CACHE_FOLDER=/cache/yarn
+
+yarn install --frozen-lockfile
+
+mkdir ~/.ssh -p
+key_path="$HOME/.ssh/id_ed25519"
+source .secrets
+echo "-----BEGIN OPENSSH PRIVATE KEY-----" > "${key_path}"
+echo "$SSH_DEPLOY_KEY" >> "${key_path}"
+echo "-----END OPENSSH PRIVATE KEY-----" >> "${key_path}"
+chmod 0600 "${key_path}"
+
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+git config --global user.email "buildkite@radicle.xyz"
+git config --global user.name "Buildkite Builder"
+USE_SSH=true GIT_USER=notneeded yarn deploy
+

@@ -26,8 +26,15 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
+The master branch of this repo is automatically deployed to
+`registry.radicle.xyz` by [Buildkite][buildkite-pipeline] via Github Pages.
+
+You can also manually deploy the site by running:
+
 ```
 $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+[buildkite-pipeline]: https://buildkite.com/monadic/registry-dot-radicle-dot-xyz
