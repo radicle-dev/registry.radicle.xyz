@@ -8,14 +8,16 @@ module.exports = {
   projectName: 'registry.radicle.xyz', // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
-    disableDarkMode: true, // Disables darkmode switch
+    colorMode: {
+      disableSwitch: true
+    },
     navbar: {
       title: 'Radicle Registry',
       logo: {
         alt: 'Radicle Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {to: '/docs/intro', label: 'Docs', position: 'left'},
         {href: 'https://radicle.community', label: 'Community', position: 'left'},
         {to: '/docs/faq', label: 'FAQ', position: 'left'},
