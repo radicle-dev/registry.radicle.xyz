@@ -17,7 +17,7 @@ module.exports = {
         alt: 'Radicle Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {to: '/docs/intro', label: 'Docs', position: 'left'},
         {href: 'https://radicle.community', label: 'Community', position: 'left'},
         {to: '/docs/faq', label: 'FAQ', position: 'left'},
